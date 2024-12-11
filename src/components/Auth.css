@@ -1,54 +1,66 @@
-/* Auth.css */
+/* General Auth Styling */
 .auth {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #ffffff;
-    color: #333333;  /* Dark gray text for better readability */
-    font-family: "Arial", sans-serif;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%; /* Wide layout */
+  max-width: 1200px; /* Limit the max width */
+  height: 300px; /* Short height, TV-like */
+  margin: auto;
+  background-color: #ffffff; /* White background for bright look */
+  color: #333; /* Dark text for better readability */
+  border-radius: 20px; /* Rounded corners for TV screen effect */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Text inside the Auth Component */
+.auth p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #555; /* Slightly lighter text for readability */
+}
+
+/* Sign In Button */
+.auth button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff; /* Bright blue for the button */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+.auth button:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Blue glow on focus */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .auth {
+    width: 100%; /* Full width on smaller screens */
+    height: 250px; /* Adjust the height for small screens */
   }
-  
+
   .auth p {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-    color: #555555; /* Subtle gray for text */
+    font-size: 1rem;
   }
-  
+
   .auth button {
-    padding: 0.75rem 1.5rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #ffffff;
-    background-color: #6c757d;  /* Subtle muted gray */
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    font-size: 0.9rem;
   }
-  
-  .auth button:hover {
-    background-color: #5a6268;  /* Slightly darker gray on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .auth button:focus {
-    outline: none;
-    box-shadow: 0 0 8px rgba(108, 117, 125, 0.6);
-  }
-  
-  @media (max-width: 768px) {
-    .auth p {
-      font-size: 1.2rem;
-    }
-  
-    .auth button {
-      padding: 0.5rem 1rem;
-      font-size: 1rem;
-    }
-  }
-  
+}

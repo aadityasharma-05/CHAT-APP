@@ -168,7 +168,7 @@ export const Chat = ({ room }) => {
       </div>
       <div className="messages">
         {messages.length === 0 ? (
-          <p></p> // Display a message if there are no messages
+          <p>no message </p> // Display a message if there are no messages
         ) : (
           messages.map((message) => (
             <div key={message.id} className="message">
